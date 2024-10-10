@@ -1,2 +1,5 @@
 matplotlib.pyplot
 seaborn
+pandas
+numpy
+streamlit
