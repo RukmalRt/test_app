@@ -66,7 +66,7 @@ rooms = df['Rooms'].unique()
 selected_rooms = st.sidebar.multiselect("Select Number of Rooms", rooms, default=rooms)
 
 bathroom = df['Bathroom'].unique()
-select_bathroom = st.sidebar.multiselect("Select Number of Bathrooms", bathroom, default=bathroo)
+select_bathroom = st.sidebar.multiselect("Select Number of Bathrooms", bathroom, default=bathroom)
 
 filtered_data = df[
     (df['Regionname'].isin(selected_regions)) &
