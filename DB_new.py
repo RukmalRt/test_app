@@ -11,7 +11,7 @@ df['M/Y'] = df['M/Y'].astype(str)
 
 df['Date1'] = pd.to_datetime(df['Date'], format='%d-%m-%Y')
 df['Year'] = df['Date1'].dt.year
-
+df['Bathroom'] = df['Bathroom'].fillna('N/A')
 
 df_new = df[['Suburb', 'Rooms', 'Type', 'Price', 'Distance', 'Bathroom', 'Landsize', 'YearBuilt', 'Regionname', 'M/Y', 'Year']]
 
