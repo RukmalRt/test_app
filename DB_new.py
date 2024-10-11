@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
 
-df = pd.read_csv(r'C:\Users\Rukmal\PycharmProjects\pythonProject\melbourne.csv')
+df = pd.read_csv('melbourne.csv')
 df['Date'] = pd.to_datetime(df['Date'], format = 'mixed')
 df['M/Y'] = df['Date'].dt.to_period('M')
 df['M/Y'] = df['M/Y'].astype(str)
